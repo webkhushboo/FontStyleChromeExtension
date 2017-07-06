@@ -4,9 +4,18 @@
         <title>
             Page Fontstyle chrome extension
         </title>
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src="popup.js"> </script>
+        <script src="jscolor.min.js"> </script>
+        <style> 
+        body{
+            min-height: 150px;
+            min-width:250px;
+        }
+        </style>
     </head>
     <body>
-        <input type="text" id ="fontColor"/>
-        <input tpe="submit" id="btnChange" value="Change"/>
+        <input type="text" id ="fontColor" class="jscolor"/>
+        <input type="submit" id="btnChange" value="Change"/>
     </body>
 </html>

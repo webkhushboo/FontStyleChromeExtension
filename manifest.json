@@ -19,7 +19,8 @@
     },
     "content_scripts" :[{
         "matches" :["https://developer.chrome.com/*"],
-        "js":["content.js","jquery-3.2.1.min.js"]
+        "js":["content.js","jquery-3.2.1.min.js"],
+        "css":["main.css"]
     }
     ],
     "permissions":[
