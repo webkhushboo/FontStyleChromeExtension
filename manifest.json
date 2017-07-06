@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "FontStyle Chrome Extension",
+    "description": "This will help you to change font style of text on specific page",
+    "version": "1.0",
+    "icons": {
+        "16": "icon16.png",
+         "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "page_action": {
+        "default_icon": "icon16.png",
+        "default_popup": "popup.html",
+        "default_title": "Page Font Style"
+    },
+   "background" : {
+        "scripts":["eventPage.js"],
+         "persistent":false
+    },
+    "content_scripts" :[{
+        "matches" :["https://developer.chrome.com/*"],
+        "js":["content.js","jquery-3.2.1.min.js"]
+    }
+    ],
+    "permissions":[
+        "tabs",
+        "https://developer.chrome.com/*"
+    ]
+}
